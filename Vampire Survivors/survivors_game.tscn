@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bg4luoeda42b7"]
+[gd_scene load_steps=4 format=3 uid="uid://bg4luoeda42b7"]
 
 [ext_resource type="PackedScene" uid="uid://chsvb512kqnih" path="res://player.tscn" id="1_2j8g4"]
+[ext_resource type="PackedScene" uid="uid://dqq0u2cgl3suv" path="res://mob.tscn" id="2_1yl6m"]
 [ext_resource type="PackedScene" uid="uid://dryk4uhqrwt4r" path="res://pine_tree.tscn" id="2_qwcls"]
 
 [node name="Game" type="Node2D"]
@@ -10,32 +11,35 @@ y_sort_enabled = true
 offset_right = 1950.0
 offset_bottom = 1104.0
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_2j8g4")]
+[node name="Player" parent="." instance=ExtResource("1_2j8g4")]
 position = Vector2(940, 545)
 
-[node name="StaticBody2D" parent="." instance=ExtResource("2_qwcls")]
-position = Vector2(440, 261)
+[node name="Mob" parent="." instance=ExtResource("2_1yl6m")]
+position = Vector2(602, 519)
 
-[node name="StaticBody2D2" parent="." instance=ExtResource("2_qwcls")]
-position = Vector2(296, 887)
+[node name="PineTree" parent="." instance=ExtResource("2_qwcls")]
+position = Vector2(174, 244)
 
-[node name="StaticBody2D3" parent="." instance=ExtResource("2_qwcls")]
-position = Vector2(1488, 227)
+[node name="PineTree2" parent="." instance=ExtResource("2_qwcls")]
+position = Vector2(1512, 320)
 
-[node name="StaticBody2D4" parent="." instance=ExtResource("2_qwcls")]
-position = Vector2(1614, 333)
+[node name="PineTree3" parent="." instance=ExtResource("2_qwcls")]
+position = Vector2(244, 900)
 
-[node name="StaticBody2D5" parent="." instance=ExtResource("2_qwcls")]
-position = Vector2(1598, 221)
+[node name="PineTree4" parent="." instance=ExtResource("2_qwcls")]
+position = Vector2(490, 650)
 
-[node name="StaticBody2D6" parent="." instance=ExtResource("2_qwcls")]
-position = Vector2(1082, 875)
+[node name="PineTree5" parent="." instance=ExtResource("2_qwcls")]
+position = Vector2(916, 236)
 
-[node name="StaticBody2D7" parent="." instance=ExtResource("2_qwcls")]
-position = Vector2(1642, 735)
+[node name="PineTree6" parent="." instance=ExtResource("2_qwcls")]
+position = Vector2(1410, 842)
 
-[node name="StaticBody2D8" parent="." instance=ExtResource("2_qwcls")]
-position = Vector2(370, 839)
+[node name="PineTree7" parent="." instance=ExtResource("2_qwcls")]
+position = Vector2(1208, 902)
 
-[node name="StaticBody2D9" parent="." instance=ExtResource("2_qwcls")]
-position = Vector2(1322, 887)
+[node name="PineTree8" parent="." instance=ExtResource("2_qwcls")]
+position = Vector2(1416, 246)
+
+[node name="PineTree9" parent="." instance=ExtResource("2_qwcls")]
+position = Vector2(1166, 510)
