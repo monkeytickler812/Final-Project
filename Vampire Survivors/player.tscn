@@ -55,3 +55,5 @@ theme_override_styles/background = SubResource("StyleBoxFlat_hhjhj")
 theme_override_styles/fill = SubResource("StyleBoxFlat_iu5my")
 value = 100.0
 show_percentage = false
+
+[node name="Camera2D" type="Camera2D" parent="."]
