@@ -1,4 +1,6 @@
 res://survivors_game.tscn
-res://survivors_game.gd
+res://gun.tscn
 res://player.tscn
-res://player.gd
+res://Timer.tscn
+res://CanvasLayer.gd
+res://TimeCounter.gd

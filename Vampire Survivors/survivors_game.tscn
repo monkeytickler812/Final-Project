@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bg4luoeda42b7"]
+[gd_scene load_steps=6 format=3 uid="uid://bg4luoeda42b7"]
 
 [ext_resource type="PackedScene" uid="uid://chsvb512kqnih" path="res://player.tscn" id="1_2j8g4"]
 [ext_resource type="Script" path="res://survivors_game.gd" id="1_4anbx"]
+[ext_resource type="Script" path="res://TimeCounter.gd" id="2_18w75"]
 [ext_resource type="PackedScene" uid="uid://dryk4uhqrwt4r" path="res://pine_tree.tscn" id="2_qwcls"]
 
 [sub_resource type="Curve2D" id="Curve2D_4yonc"]
@@ -20,6 +21,48 @@ layer = -30
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 offset_right = 1950.0
 offset_bottom = 1104.0
+
+[node name="TimeCounter" type="Panel" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -123.0
+offset_right = 130.0
+offset_bottom = 52.0
+grow_horizontal = 2
+script = ExtResource("2_18w75")
+
+[node name="Minutes" type="Label" parent="CanvasLayer/TimeCounter"]
+layout_mode = 1
+offset_left = 8.0
+offset_right = 75.0
+offset_bottom = 55.0
+theme_override_font_sizes/font_size = 40
+text = "00:"
+
+[node name="Seconds" type="Label" parent="CanvasLayer/TimeCounter"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -35.0
+offset_right = 35.0
+offset_bottom = 55.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 40
+text = "00."
+
+[node name="Msecs" type="Label" parent="CanvasLayer/TimeCounter"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -77.0
+offset_right = -8.0
+offset_bottom = 55.0
+grow_horizontal = 0
+theme_override_font_sizes/font_size = 40
+text = "000"
 
 [node name="Player" parent="." instance=ExtResource("1_2j8g4")]
 position = Vector2(940, 545)
