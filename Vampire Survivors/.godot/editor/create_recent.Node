@@ -1,6 +1,7 @@
+Button
+CanvasLayer
 Label
 ColorRect
-CanvasLayer
 Camera2D
 Timer
 PathFollow2D
