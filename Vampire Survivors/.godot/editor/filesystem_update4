@@ -1,5 +1,13 @@
 res://survivors_game.tscn
 <<<<<<< HEAD
+<<<<<<< HEAD
 res://survivors_game.gd
 =======
 >>>>>>> main
+=======
+res://gun.tscn
+res://player.tscn
+res://Timer.tscn
+res://CanvasLayer.gd
+res://TimeCounter.gd
+>>>>>>> timer
