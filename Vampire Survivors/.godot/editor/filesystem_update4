@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 res://TitleScreen.tscn
 res://TitleScreen.gd
 res://survivors_game.tscn
@@ -13,3 +14,9 @@ res://Timer.tscn
 res://CanvasLayer.gd
 res://TimeCounter.gd
 >>>>>>> timer
+=======
+res://gun.tscn
+res://player.tscn
+res://survivors_game.tscn
+res://mob.tscn
+>>>>>>> ak47
