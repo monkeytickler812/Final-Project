@@ -1,3 +1,5 @@
 res://survivors_game.tscn
 res://player.tscn
 res://gun.tscn
+res://mob.gd
+res://mob.tscn
