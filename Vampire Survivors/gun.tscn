@@ -17,13 +17,13 @@ shape = SubResource("CircleShape2D_kt6po")
 [node name="WeaponPivot" type="Marker2D" parent="."]
 
 [node name="Pistol" type="Sprite2D" parent="WeaponPivot"]
-position = Vector2(95.375, -59.25)
+position = Vector2(98, -40)
 scale = Vector2(0.190674, 0.190755)
 texture = ExtResource("2_nxsvr")
 
 [node name="ShootingPoint" type="Marker2D" parent="WeaponPivot/Pistol"]
 unique_name_in_owner = true
-position = Vector2(260.261, -9.17407)
+position = Vector2(267.472, 5.24233)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.1
