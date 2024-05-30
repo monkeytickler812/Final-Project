@@ -15,7 +15,7 @@ func _physics_process(delta):
 
 
 func take_damage():
-	health -= 1
+	health -= 0.75
 	%Slime.play_hurt()
 	
 	if health == 0:
