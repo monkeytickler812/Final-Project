@@ -1,8 +1,12 @@
 AudioStreamPlayer
+<<<<<<< HEAD
+=======
+Button
+CanvasLayer
+>>>>>>> Title-Screen
 Label
 Panel
 ColorRect
-CanvasLayer
 Camera2D
 Timer
 PathFollow2D
