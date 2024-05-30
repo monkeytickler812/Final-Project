@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://bg4luoeda42b7"]
+[gd_scene load_steps=8 format=3 uid="uid://bg4luoeda42b7"]
 
 [ext_resource type="PackedScene" uid="uid://chsvb512kqnih" path="res://player.tscn" id="1_2j8g4"]
 [ext_resource type="Script" path="res://survivors_game.gd" id="1_4anbx"]
 [ext_resource type="PackedScene" uid="uid://dryk4uhqrwt4r" path="res://pine_tree.tscn" id="2_qwcls"]
+[ext_resource type="Script" path="res://Panel.gd" id="2_sj5b7"]
 [ext_resource type="AudioStream" uid="uid://cbl077ge050qj" path="res://splash-death-splash-46048.mp3" id="4_juf58"]
 
 [sub_resource type="Curve2D" id="Curve2D_4yonc"]
@@ -26,6 +27,43 @@ layer = -30
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
 offset_right = 1950.0
 offset_bottom = 1104.0
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -125.0
+offset_right = 125.0
+offset_bottom = 55.0
+grow_horizontal = 2
+script = ExtResource("2_sj5b7")
+
+[node name="Minutes" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 6.5
+offset_top = 2.0
+offset_right = 55.5
+offset_bottom = 33.0
+theme_override_font_sizes/font_size = 40
+text = "00:"
+
+[node name="Seconds" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 2.0
+offset_right = 153.0
+offset_bottom = 57.0
+theme_override_font_sizes/font_size = 40
+text = "00."
+
+[node name="Msecs" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 176.0
+offset_top = 2.0
+offset_right = 245.0
+offset_bottom = 57.0
+theme_override_font_sizes/font_size = 40
+text = "000"
 
 [node name="Player" parent="." instance=ExtResource("1_2j8g4")]
 position = Vector2(940, 545)

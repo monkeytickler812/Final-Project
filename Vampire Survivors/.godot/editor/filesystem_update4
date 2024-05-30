@@ -1,14 +1,3 @@
-<<<<<<< HEAD
 res://TitleScreen.tscn
-res://TitleScreen.gd
 res://survivors_game.tscn
-<<<<<<< HEAD
-res://survivors_game.gd
-=======
->>>>>>> main
-=======
-res://gun.tscn
-res://player.tscn
-res://survivors_game.tscn
-res://mob.tscn
->>>>>>> ak47
+res://Panel.gd
